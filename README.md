@@ -17,6 +17,15 @@ and run the following command:
 npx create-next-app your-blog --example "https://github.com/Pingid/nextjs-netlifycms-typescript"
 ```
 
+To run localy, start the cms with 
+```
+yarn local-backend
+``` 
+Then start next development server with
+```
+yarn dev
+```
+
 [A Step-by-Step Guide: Deploying on Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
 
 ## References
