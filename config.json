@@ -1,0 +1,11 @@
+{
+  "base_url": "https://example.netlify.app",
+  "site_title": "TITL",
+  "site_description": "DESCRIPTION",
+  "site_keywords": [
+    {
+      "keyword": "Next.js"
+    }
+  ],
+  "instagram_account": "something"
+}

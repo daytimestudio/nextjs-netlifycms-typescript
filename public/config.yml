@@ -1,0 +1,40 @@
+backend:
+  name: git-gateway
+  branch: master
+local_backend: true
+media_folder: data/media
+public_folder: media
+
+collections:
+  - name: "data"
+    label: "Site data"
+    delete: false
+    folder: data
+    extension: json
+    summary: "Edit site data"
+    description: "Manage the content of the website"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - name: "work"
+        label: "Work"
+        widget: "list"
+        file: "data/data.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string", required: false }
+          - label: "Images" 
+            name: "images" 
+            widget: "list" 
+            required: false
+            fields:
+              - { label: "Image", name: "thumbnail", widget: "image" }
+              - { label: "Label", name: "label", widget: "string", required: false }
+      - name: "config"
+        label: "Site settings"
+        widget: "object"
+        file: "data/data.json"
+        fields:
+          - { label: "URL", name: "base_url", widget: "string", hint: "Do not enter the trailing slash of the URL" }
+          - { label: "Site description", name: "site_description", widget: "string" }
+          - { label: "Site keywords", name: "site_keywords", widget: "list", summary: "{{fields.keyword.keyword}}", field: { label: Keyword, name: keyword, widget: "string" } }
+          - { label: "Instagram account", name: "instagram_account", widget: "string" }

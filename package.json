@@ -1,0 +1,51 @@
+{
+  "name": "nextjs-netlifycms-typescript",
+  "version": "0.1.1",
+  "description": "Boilerplate for nextjs app using netlify CMS, tailwind, prettier, next optimized images and typescript.",  
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc",
+    "export": "next build && next export",
+    "prettier": "prettier --write \"(pages|components)/**/*.{js,jsx,ts,tsx}\"",
+    "local-backend": "npx netlify-cms-proxy-server"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@types/node": "^12.12.21",
+    "next-optimized-images": "^2.6.2",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "image-trace-loader": "^1.0.2",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^8.0.0",
+    "prettier": "^2.1.2",
+    "jimp": "^0.16.1",
+    "lqip-loader": "^2.2.1",
+    "next-compose-plugins": "^2.2.0",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "responsive-loader": "^2.2.0",
+    "svg-sprite-loader": "^5.0.0",
+    "tailwindcss": "^1.9.5",
+    "typescript": "4.0",
+    "webp-loader": "^0.6.0"
+  },
+  "license": "MIT",
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true,
+    "parser": "typescript"
+  }
+}
