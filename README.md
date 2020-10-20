@@ -1,8 +1,9 @@
 # Typescript, Next.js, Netlify CMS, and Tailwind example.
 This is a simple project that combines features including:
-- [tailwindcss](https://github.com/tailwindlabs/tailwindcss) the utility-first CSS framework
-- [prettier](https://github.com/prettier/prettier) the opinionated code formatter.
-- [netlify CMS](https://github.com/netlify/netlify-cms) the Git-based CMS.
+- [tailwindcss](https://github.com/tailwindlabs/tailwindcss) a utility-first CSS framework
+- [prettier](https://github.com/prettier/prettier) an opinionated code formatter.
+- [netlify CMS](https://github.com/netlify/netlify-cms) a Git-based CMS.
+- [next omptimized images](https://github.com/cyrilwanner/next-optimized-images) to automatically optimizes images.
 
 ## Instant deploy
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Pingid/nextjs-netlifycms-typescript&stack=cms)
