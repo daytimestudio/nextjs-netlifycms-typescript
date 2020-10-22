@@ -15,6 +15,7 @@ const ConfigPreview = (props: any) => {
 
 const IndexPage = () => {
   useEffect(() => {
+    document.title = 'Admin'
     const identScript = document.createElement('script')
     const cmscript = document.createElement('script')
     identScript.src = 'https://identity.netlify.com/v1/netlify-identity-widget.js'

@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+  @apply w-full;
+  @apply h-full;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul, ol {
+  @apply ml-4;
+}
+
+h1, h2 {
+  @apply pt-6;
+  @apply pb-1;
+  @apply text-xl;
+}
+
+p {
+  @apply pt-2;
+  @apply pb-1;
+}
+
+a {
+  @apply underline;
+  @apply text-blue-500;
+}

@@ -6,35 +6,32 @@ media_folder: data/media
 public_folder: media
 
 collections:
-  - name: "data"
-    label: "Site data"
+  - name: "pages"
+    label: "Pages"
+    description: "You can edit the pages of your website here"
+    files: 
+      - label: 'Image Example'
+        name: 'image-example'
+        file: data/pages/image-example.json
+        delete: false
+        fields:
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+          - { label: "Image", name: "thumbnail", widget: "image" }
+              
+  - name: "settings"
+    label: "Settings"
     delete: false
-    folder: data
-    extension: json
-    summary: "Edit site data"
-    description: "Manage the content of the website"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - name: "work"
-        label: "Work"
-        widget: "list"
-        file: "data/data.json"
+    description: "Manage settings including your sites title, description and keywords."
+    summary: "Metadata"
+    files:
+      - label: 'Metadata'
+        name: 'metadata'
+        file: data/settings.json
+        delete: false
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "string", required: false }
-          - label: "Images" 
-            name: "images" 
-            widget: "list" 
-            required: false
-            fields:
-              - { label: "Image", name: "thumbnail", widget: "image" }
-              - { label: "Label", name: "label", widget: "string", required: false }
-      - name: "config"
-        label: "Site settings"
-        widget: "object"
-        file: "data/data.json"
-        fields:
-          - { label: "URL", name: "base_url", widget: "string", hint: "Do not enter the trailing slash of the URL" }
+          - { label: "Site title", name: "site_title", widget: "string" }
           - { label: "Site description", name: "site_description", widget: "string" }
-          - { label: "Site keywords", name: "site_keywords", widget: "list", summary: "{{fields.keyword.keyword}}", field: { label: Keyword, name: keyword, widget: "string" } }
+          - { label: "URL", name: "base_url", widget: "string", hint: "Do not enter the trailing slash of the URL" }
+          - { label: "Preview thumbnail", name: "thumbnail", widget: "image" }
+          - { label: "Site keywords", name: "site_keywords", widget: "string", hint: 'Use a comma to separate keywords. E.g Photography, Portfolio, Prints'}
           - { label: "Instagram account", name: "instagram_account", widget: "string" }

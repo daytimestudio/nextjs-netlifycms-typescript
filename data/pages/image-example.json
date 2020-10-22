@@ -1,0 +1,5 @@
+{
+  "title": "About Page",
+  "content": "Welcome to a markdown rendered page from NetlifyCMS!\n\nWe can do formatting like **Bold** and *Italics*, we can make lists:\n\n* With bullet points\n\n1. Or numbers\n\nand much more. \n\nJust note, because tailwind.css overwrites all the default element styles, you'll need to add css to render these properly, check the css/tailwind.css file for more.\n\n The data files are stored as JSON so that we get type inference for free with typescript.",
+  "thumbnail": "media/solen-feyissa-4gc3b-blsji-unsplash.jpg"
+}
